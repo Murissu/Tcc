@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Listagem de Produtos</title>
+</head>
+
+<body>
+    <header>
+        <p id="cabecalho">
+            <a href="produtos">HOME</a>
+            <a href="produto" id="cadastrar">CADASTRAR PRODUTOS</a>
+            <a href="/" id="login"><img src="usuario.png" alt="login" width="30px" height="30px"></a>
+        </p>
+    </header>
+    <br>
+    <h1> PRODUTOS DISPONÍVEIS </h1>
+    <br>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Frete</th>
+            <th>Estoque</th>
+        </tr>
+        <%Produtos.forEach(function(produto){%>
+        <tr>
+            <td><%=produto.nome%></td>
+            <td><%=produto.descricao%></td>
+            <td><%=produto.valor%></td>
+            <td><%=produto.frete%></td>
+            <td><%=produto.estoque%></td>
+        </tr>
+        <%})%>
+
+    </table>
+
+    <br>
+    <button>
+        <a href="/produto">Adicionar</a>
+    </button>
+</body>
+
+</html>

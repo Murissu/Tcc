@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Produtos</title>
+  <base href="/produto">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <header>
+    <p id="cabecalho">
+      <a href="produtos">HOME</a>
+      <a href="produto" id="cadastrar">CADASTRAR PRODUTOS</a>
+      <a href="/" id="login"><img src="usuario.png" alt="login" width="30px" height="30px"></a>
+    </p>
+  </header>
+
+  <main>
+    <h1> CADASTRO DE PRODUTOS </h1>
+    <form method="post" id="form" enctype="multipart/form-data">
+
+      <section>
+        <div>
+          <p> Nome do Produto </p>
+          <input type="text" name="nome" placeholder="Digite o nome" id="atv">
+        </div>
+
+        <div class="pai">
+          <div>
+            <p>Descrição do Produto</p>
+            <input type="text" name="descricao" placeholder="Digite a descricao" id="atv">
+          </div>
+
+      <section>
+        <div>
+          <p> Estoque </p>
+          <input type="text" name="estoque" placeholder="Quantidade em estoque" id="atv">
+        </div>
+
+        <div class="pai">
+          <div>
+            <p> Valor </p>
+            <input type="text" name="valor" placeholder="Informe o valor" id="atv">
+          </div>
+
+          <div>
+            <p> Frete </p>
+            <input type="text" name="frete" placeholder="Informe o frete" id="atv">
+          </div>
+        </div>
+        <div class = "foto">
+          <div>
+            <p> Foto </p>
+            <input type="file" name="imgproduto" placeholder="Imagem do produto" id="atv">
+          </div>
+
+        </div>
+        <input type="submit" value="Enviar" id="env">
+      </section>
+
+    </form>
+    <div id="cadastrados">
+      <h1> PRODUTOS CADASTRADOS </h1>
+
+      <table>
+        <tr>
+          <th>Nome</th>
+          <th>Descrição</th>
+          <th>Valor</th>
+          <th>Frete</th>
+          <th>Estoque</th>
+          <th>Foto</th>
+          <th>Editar</th>
+          <th>Deletar</th>
+        </tr>
+        <%Produtos.forEach(function(produto){%>
+        <tr>
+          <td><%=produto.nome%></td>
+          <td><%=produto.descricao%></td>
+          <td><%=produto.valor%></td>
+          <td><%=produto.frete%></td>
+          <td><%=produto.estoque%></td>
+          <td><%=produto.imgproduto%></td>
+          <td><a href="/editar/<%=produto._id%>"> <img src="editar.png" width="20px"></a></td>
+          <td><a href="/deletar/<%=produto._id%>"><img src="deletar.png" width="20px"></a></td>
+        </tr>
+        <%})%>
+
+      </table>
+    </div>
+  </main>
+</body>
+
+</html>

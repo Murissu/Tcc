@@ -1,0 +1,300 @@
+body {
+width: 100%;
+height: 100%;
+margin: 0 auto;
+}
+ul {
+    padding: 0px!important;
+}
+.menu-principal {
+width: 100%;
+background-color: #ffdb6c;
+height: 60px;
+}
+main, .content {
+margin: 0 auto;
+width: 980px;
+position: relative;
+}
+.logo {
+float: left;
+width: 70%;
+}
+.redes-sociais ul li {
+ margin-left: 23px;
+ display: inline-block;
+ float: left;
+}
+.redes-sociais{
+    width: 25%;
+    float: right;
+}
+.header-2 {
+    width: 980px;
+    margin: 0 auto;
+    padding: 16px;
+}
+.header-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff5d5;
+    z-index: -1;
+  }  
+
+.menu ul {
+width: 35%;
+float: left;
+}
+.menu-urls{
+    height: 80px;
+    border-bottom: 3px solid #7c5414;
+}
+.menu ul li {
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 15px;
+
+}
+
+.menu ul li:hover {
+    height: 45px;
+    border-bottom: 3px solid #bbb10c;
+}
+
+.menu ul li a:hover {
+    color: #bbb10c;
+}
+
+.menu ul li a {
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+
+}
+.busca{
+    position: relative;
+    top: 13px;
+    left: 230px;
+    width: 65%;
+}
+.busca input{
+    background-image: url('../img/icone-pesquisa.png');
+    background-repeat: no-repeat;
+    background-position: 96%;
+    height: 30px;
+    width: 190px;
+    padding: 10px;
+    border: 1px solid #7c5414;
+}
+
+.login ul li{
+    width: 10%;
+    float: right;
+    display: inline-block;
+    color: #8b8b8b;
+    position: relative;
+    top: -29px;
+    left: -90px;
+
+}
+
+.login ul li a {
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+    
+}
+.login ul li:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 70%;
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: #bbb10c;
+    top: 44px;
+}
+
+.col-100{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: relative;
+    background-image: url('../img/seta-direita.png');
+    top: 35%;
+    left: 14%;
+}
+
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('../img/seta-esquerda.png');
+    top: 35%;
+    right: 14%;
+}
+
+.slick-initialized {
+    overflow: hidden;
+}
+
+.slick-dots li button {
+    font-size: 0px;
+    border: 5px solid #ffffff;
+    width: 26px;
+    height: 26px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.slick-dots {
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 47%;
+    top: 590px;
+}
+li.slick-active button {
+    background: #daa520;
+
+}
+.slick-dots li {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+
+.texto-destaque {
+    text-align: center;
+}
+
+.texto-destaque strong {
+    color: #646464;
+}
+
+.texto-destaque h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #818181;
+}
+
+.texto-destaque p {
+    font-size: 15px;
+    color: #9a9a9a;
+
+}
+
+.col-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 29%;
+    float: left;
+    position: relative;
+}
+
+.bloco-texto {
+    margin-top: 3em;
+}
+
+h3 {
+    font-weight: normal!important;
+}
+
+.main-login{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffdb6c;
+    opacity: .8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 15px;
+    color: #7c5414;
+}
+.main-login input{
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+.main-login button{
+    background-color: #daa520;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.main-login button:hover{
+    background-color: darkgoldenrod;
+    
+}
+.main-login a{
+    text-decoration: none;
+}
+
+.main-registrar{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffdb6c;
+    opacity: .8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 15px;
+    color: #7c5414;
+}
+.main-registrar input{
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    
+}
+.main-registrar button{
+    background-color: #daa520;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.main-registrar button:hover{
+    background-color: darkgoldenrod;
+}
+.main-registrar a{
+    text-decoration: none;
+}
+.background{
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
